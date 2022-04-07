@@ -10,7 +10,7 @@ const ToDoList = () => {
   return (
     <div className="todolist">
         {todos.map((todo, i) => (
-          <div  key={i} style={{display:'flex', justifyContent:'center'}}>
+          <div className="itemGroup"  key={i} style={{display:'flex', justifyContent:'center'}}>
             <Item onClick={toggleTooDoo} todoId={todo.id} completed={todo.completed}>{todo.name}</Item>
             <Button onClick={deleteToDo} todoId={todo.id} >X</Button>
           </div>

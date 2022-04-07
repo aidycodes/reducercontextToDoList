@@ -17,14 +17,24 @@
 .item {
   padding: 0.5rem;
   border-radius: 10px;
-  background-color: rgb(244, 214, 234);
-  border: 1px solid black;
+
   min-width: 20rem;
   margin: 0.2rem;
 }
 
-.item:nth-child(even) {
-  background-color: blue;
+.itemGroup {
+  border-radius: 50px;
+}
+
+.todolist .itemGroup:nth-child(odd) {
+  background-color: rgb(244, 214, 234);
+}
+
+.todolist div:nth-child(even) {
+  background-color: limegreen;
+}
+.todolist div:nth-child(even):hover {
+  background-color: yellow;
 }
 
 .button {
@@ -32,9 +42,14 @@
   padding: 1rem;
   border-radius: 50px;
   border: none;
+  background-color: inherit;
 }
 
 .button:hover {
-  background-color: grey;
+  background-color: red;
   border: none;
+}
+
+.input .button {
+  background-color: lightgrey;
 }

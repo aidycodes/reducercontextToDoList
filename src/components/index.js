@@ -11,7 +11,7 @@ const ToDo = () => {
 
   return (
     <div className='todowrapper'>
-    <div style={{display:'flex', justifyContent:'center', margin:'2rem'}}>
+    <div className="input" style={{display:'flex', justifyContent:'center', margin:'2rem'}}>
         <Input/>
         <Button onClick={addTooDoo} todoId={todoId}>Add</Button>
         </div>
